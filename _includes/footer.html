@@ -1,37 +1,50 @@
 <footer>
 
-  <div class="fbanner">
+  <section class="container-fluid foot">
 
-    <div class="ficons ftop">  
+    <div class="row hcenter pad-tb bbord">  
       
-      <div class="logowrap smaller">
-        <a href="/">
-          <img src="/wp-content/uploads/2015/10/Logo-animation-2.gif" class="slogo">
-        </a>
-    	</div>
       
-      <div class="sicons ficons">
-        <a>
-          <img class="social" src="/wp-content/uploads/2015/10/social_twit.png">
+      <a href="/" class="col-xs-5 col-xs-offset-1 col-sm-2 col-sm-offset-1 col-md-2 col-md-offset-1">
+        <img src="{{ site.flogo | prepend:site.imgurl }}" class="img-circle col-xs-24 col-sm-24 col-md-24">
+      </a>
+
+      
+      <div class="col-xs-14 col-xs-offset-3 col-sm-5 col-sm-offset-15 col-md-5 col-md-offset-15">
+        {% for social in site.data.social %}
+        <a href="http://{{social.link}}" class="col-xs-offset-4 col-sm-offset-3 col-md-offset-4">
+          <img width=25 height=25 class="social" alt="{{social.alt}}" src="{{ social.image | prepend:site.imgurl }}">
         </a>
-        <a>
-          <img class="social" src="/wp-content/uploads/2015/10/social_li.png">
-        </a>
-        <a>
-          <img class="social" src="/wp-content/uploads/2015/10/social_fb.png">
-        </a>
+        {% endfor %}
       </div>
     
     </div>
     
-    <div class= "ficons">
-      <a href="http://www.riverbank-design.co.uk" class="ficons rb">
-        <span>Created by:</span>www.riverbank-design.co.uk
-        <img src="http://riverbank-design.co.uk/wp-content/uploads/2015/10/social_rb.png" class="rblogo">
+    <div class= "row hcenter hidden-xs">
+      
+      <h6 class="col-xs-22 col-xs-offset-1 col-sm-8 col-sm-offset-1 col-md-8 col-md-offset-1"><small>{{site.fcopyright}}</small></h6>
+      <a href="http://{{site.frb}}" class="col-xs-18 col-xs-offset-1 col-sm-8 col-sm-offset-5 col-md-5 col-md-offset-8 hcenter">
+        <h5 class="col-sm-24 col-md-24"><small>Created by &nbsp;{{site.frb}}</small></h5>
       </a>
-        <p>© Copyright 2015 Green Heat (U) Ltd. All rights reserved.</p>
+      <img width=35 height=35 src="{{ site.frblogo | prepend:site.imgurl }}" class="col-xs-4 col-sm-1 col-md-1">
+      
     </div>
 
-  </div>
+    <div class= "row visible-xs"> 
+      <h6 class="col-xs-22 col-xs-offset-1"><small>{{site.fcopyright}}</small></h6>
+    </div>
+    <div class="row visible-xs">
+      <a href="http://{{site.frb}}" class="col-xs-18 col-xs-offset-1 hcenter">
+        <h5 class="col-xs-24"><small>Created by &nbsp;{{site.frb}}</small></h5>
+      </a>
+      <img width=35 height=35 src="{{ site.frblogo | prepend:site.imgurl }}" class="col-xs-2">
+    </div>
+
+    </div>
+
+
+</section>
+
+  <script type="text/javascript" src="/assets/javascripts/bootstrap.min.js"></script>
 
 </footer>

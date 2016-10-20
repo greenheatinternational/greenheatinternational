@@ -1,0 +1,33 @@
+<section id="contact" class="container-fluid cont1 pad-tb pad-nt"> <!-- Contact -->
+ 	
+	{% assign twrap = "Contact Us" %}
+	{% assign colour = 'white' %}
+	{% assign anchor = 'contact' %}
+	{% include titlewrap.html %}
+
+	<div class="row pad-tb pad-nt">
+	 	{% for contact in site.data.contacts %}
+			<div class= "col-xs-20 col-xs-offset-2 col-sm-10 col-sm-offset-1 col-md-9 col-md-offset-2 white">
+			    <h3>
+			      {{contact.heading}}
+			    </h3>
+			    <p>
+			      {{contact.address1}}
+			    </p>
+			    <p>
+			      {{contact.address2}}
+			    </p>
+			    <p>
+			      {{contact.phone1}}
+			    </p>
+			    <p>
+			      {{contact.phone2}}
+			    </p>
+			    <a href="mailto:{{contact.email}}">
+			      {{contact.email}}
+			    </a>   	
+			</div>
+		{% endfor %}
+	</div> <!-- End of row -->
+
+</section> <!-- End of Contact -->

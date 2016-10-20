@@ -1,0 +1,20 @@
+- position: 1
+  image: biob-xs.jpg
+  alt: Bio Gas Digester
+  heading: Biogas
+  link: /biogas
+  description: Green Heat adds value to your waste. We have installed over 200 biogas digesters in Uganda, Mozambique, Togo, Ethiopia and Haiti, helping to create a reliable source of clean energy and organic fertiliser, all from unwanted waste products.
+
+- position: 2
+  image: briq-xs.jpg
+  alt: Briquettes
+  heading: Briquettes
+  link: /briquettes
+  description: Our briquettes, formed from dried banana peelings and charcoal dust, are a clean fuel alternative to wood and charcoal. We work with over 120 Ugandan farmers, utilising their agricultural waste to form bio-char.
+
+- position: 3
+  image: sunny-xs.jpg
+  alt: Solar and Energy Consultancy
+  heading: Solar Lamps & Energy Consultancy
+  link: /other-services
+  description: In rural Sub-Saharan Africa, vast regions are without access to electricity. Some families are forced to spend up to 25% of their household income on costly and unsafe fuels.

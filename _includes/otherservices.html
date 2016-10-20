@@ -1,0 +1,23 @@
+<section class="container-fluid"> <!-- Services -->
+
+{% assign twrap = "Other Services" %}
+{% assign colour = 'blubox c2' %}
+{% assign anchor = 'services' %}
+{% include titlewrap.html %}
+
+<div class="row pad-tb">
+{% for service in site.data.services %}
+	{% if service.heading != page.title %} <!-- Dont display other services on the same page -->
+		<div class="col-xs-24 col-xs-offset-0 col-sm-10 col-sm-offset-1 col-md-9 col-md-offset-2">
+		    <div class="thumbnail">
+			    <img src="{{ service.image | prepend:site.imgurl }}" alt="{{service.alt}}">
+			    <div class="caption">
+				    <h4>{{service.heading}}</h4>
+				    <p><a href="{{service.link}}" class="btn btn-primary" role="button">Learn More</a></p>
+			    </div>
+		    </div>
+	  	</div>
+	{% endif %}
+{% endfor %}
+</div> <!-- End of row -->
+</section> <!-- End of Services -->

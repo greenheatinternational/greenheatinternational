@@ -1,0 +1,23 @@
+<div class="container-fluid fheight vcenter {{page.back}}">
+	<div class="hcenter">
+	<div class="col-xs-20 col-xs-offset-2 col-md-10 col-md-offset-2">
+		<div class="row">
+			<h1 class="col-md-18 white">
+	  			{{page.heading}}
+	  		</h1>
+  		</div>
+	  	<div class="row pad-tb white">
+			<p>
+				{{page.intro}}
+			</p>
+		</div>
+	</div>
+	
+	{% if page.title == "Home" %}
+	<div class="col-md-10 visible-md visible-lg">
+		<img class="col-md-14 col-md-offset-5" src="/wp-content/uploads/2015/10/map.png">
+	</div>
+	{% endif %}
+
+	</div>
+</div>

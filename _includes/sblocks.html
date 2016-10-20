@@ -1,0 +1,40 @@
+{% for copy in page.copyinfo %}
+  {% capture loop %}{% cycle 'odd', 'even' %}{% endcapture %}
+  {% if loop == 'odd' %}
+    <section class="container-fluid pheight row">
+      <div class= "container-fluid pheight col-xs-24 col-sm-12 col-md-12 bc1 vcenter">
+        <div class="col-xs-20 col-xs-offset-2 col-md-16 col-md-offset-4">
+          <h2 class="white">
+            {{copy.heading}}
+          </h2>
+          <p class="white">
+            {{copy.text}}
+          </p>
+        </div>
+      </div>
+      <div class= "container-fluid pheight col-xs-24 col-sm-12 col-md-12 vcenter" id="{{copy.imgid}}">
+      </div>
+    </section>
+    
+    {% else %}
+    
+    <section class="container-fluid pheight">
+      <div class= "container-fluid pheight hidden-xs col-sm-12 col-md-12 vcenter" id="{{copy.imgid}}">
+      </div>
+
+      <div class= "container-fluid pheight col-xs-24 col-sm-pull-0 col-sm-12 col-md-12 bc2 vcenter">
+        <div class="col-xs-20 col-xs-offset-2 col-md-16 col-md-offset-4">
+          <h2 class="white">
+            {{copy.heading}}
+          </h2>
+          <p class="white">
+            {{copy.text}}
+          </p>
+        </div>
+      </div>
+      <div class= "container-fluid pheight visible-xs col-xs-24 vcenter" id="{{copy.imgid}}">
+      </div>
+    </section>
+  
+  {% endif %}
+{% endfor %}

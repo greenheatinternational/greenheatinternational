@@ -1,0 +1,30 @@
+<section class="container-fluid col-xs-24 col-md-20 col-md-offset-2"> <!-- Blog Grid -->
+
+{% for post in site.posts %}
+	{% capture loop %}{% cycle 'one', 'two' %}{% endcapture %}
+	{% if loop == "one" %}
+		<div class="row">
+	{% endif %}
+		<div class="col-xs-24 col-xs-offset-0 col-sm-18 col-sm-offset-3 col-md-18 col-md-offset-3">
+		    <div class="thumbnail">
+			    <img src="{{ post.image | prepend:site.imgurl }}" alt="{{post.alt}}">
+			    <div class="caption">
+				    <h4>{{post.title}}</h4>
+				    <h6>{{ post.date | date: "%b %d, %Y" }}</h6>
+				    <p>
+				    {{ post.content | strip_html | truncatewords:35}}
+				    </p>
+				    <a href="{{post.url}}" class="btn btn-primary" role="button">Read More</a>
+			    </div>
+		    </div>
+	  	</div>
+
+	{% if loop == "two" %} 	
+	  	</div>
+	{% endif %}
+	{% if forloop.last == true %}
+		</div>
+	{% endif %}  
+{% endfor %}
+
+</section> <!-- End of Services -->

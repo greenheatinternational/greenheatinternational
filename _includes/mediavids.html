@@ -1,0 +1,16 @@
+<section class="container-fluid"> <!-- MediaVids -->
+
+{% assign twrap = "Videos" %}
+{% assign colour = 'grebox c1' %}
+{% assign anchor = 'Media' %}
+{% include titlewrap.html %}
+
+{% for vid in site.data.videos %}
+<div class="row pad-tb">
+		<div class="col-xs-24 col-xs-offset-0 col-sm-18 col-sm-offset-3 col-md-16 col-md-offset-4">
+			<iframe alt="{{vid.alt}}" width="100%" height="400px" src="{{vid.source}}" frameborder="0" allowfullscreen>
+			</iframe>
+		</div>
+</div> <!-- End of row -->
+{% endfor %}
+</section> <!-- End of MediaVids -->

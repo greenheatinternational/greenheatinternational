@@ -1,0 +1,14 @@
+- position: 1
+  image: social_twit.svg
+  alt: twitter icon
+  link: twitter.com/greenheatnow
+
+- position: 2
+  image: social_li.svg
+  alt: linkedin icon
+  link: www.linkedin.com/in/okello-gabriel-b374b236
+
+- position: 3
+  image: social_fb.svg
+  alt: facebook icon
+  link: www.facebook.com/Green-Heat-Uganda-Ltd-195350977146761/

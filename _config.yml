@@ -7,13 +7,23 @@
 
 # Site settings
 title: Green Heat International
-email: your-email@domain.com
+email: info@greenheatinternational.com
 description: > # this means to ignore newlines until "baseurl:"
-  Green Heat renewable energy company based in Uganda East Africa, bio fuel, anaerobic digestion, briquettes, clean energy.
-baseurl: "/greenheat" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+ Green Heat is a renewable energy company based in Uganda, East Africa, specialising in bio fuel, anaerobic digestion, briquettes and clean energy consultancy. We convert waste into energy to reduce the reliance on non-sustainable biomass and mitigate deforestation. Our mission is to improve clean energy access, leading Africa into it’s green energy future.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: http://www.greenheatinternational.com # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  jekyll
+sass:
+    sass_dir: assets/stylesheets
 
 # Build settings
 markdown: kramdown
+# Image folder
+imgurl: /wp-content/uploads/2015/10/
+
+# Footer Variables
+flogo: Logo.gif
+fcopyright: © Copyright 2015 Green Heat (U) Ltd. All rights reserved.
+frb: www.riverbank-design.co.uk
+frblogo: logoRB.svg
